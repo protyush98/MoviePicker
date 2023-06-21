@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Movie Picker</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
@@ -32,42 +33,26 @@
     </nav>
     <!-- TRENDING -->
     <header id="trending">
-      <div id="trending-carousel" class="carousel" data-carousel>
+      <div id="trending-carousel" class="carousel" data-carousel data-trending-carousel>
         <div class="carousel-buttons">
           <button
             class="carousel-button carousel-button_previous"
             data-carousel-button-previous
           >
-            <span class="fas fa-chevron-circle-left"></span>
+          <span class="material-icons arrow">
+            arrow_left
+            </span>
           </button>
           <button
             class="carousel-button carousel-button_next"
             data-carousel-button-next
           >
-            <span class="fas fa-chevron-circle-right"></span>
+          <span class="material-icons arrow">
+            arrow_right
+            </span>
           </button>
         </div>
-        <div class="slides" data-carousel-slides-container>
-          <div class="slide" data-mov-1>
-            <div class="align-center movie-description">
-              <div class="movie-name" >
-                Movie 1
-              </div>
-              <div class="movie-text">
-                <button class="slide-btn"><span class="text">Know More</span></button>
-              </div>
-            </div>
-          </div>
-          <div class="slide" data-mov-2>
-            <div class="align-center movie-description">
-              <div class="movie-name" >
-                Movie 2
-              </div>
-              <div class="movie-text">
-                <button class="slide-btn"><span class="text">Know More</span></button>
-              </div>
-            </div>
-          </div>
+        <div class="slides" data-carousel-slides-container data-trending-carousel-container>
         </div>
       </div>
     </header>
@@ -78,39 +63,63 @@
       </div>
       <div id="search-box">
         <form id="search-form"> 
-          <input type="search" id="search-query" name="q" placeholder="Search...">
+          <input type="search" id="search-movie" name="q" placeholder="Search...">
           <button id="search-button"><svg id="search-svg" viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg></button>
         </form>
       </div>
       <!-- SEARCH RESULTS -->
       <div id="search-result">
-        <div class="mov-grid-box" style="background-color: red;">
+        <!-- <div class="mov-grid-box">
           <div id="mov-1" class="mov">
             <div id="mov-1-image" class="mov-image">
             </div>
-            <div class="mov-text-box">
-              Lorem Ipsum is simply dummy text of the printing am Lorem Ipsum is simply dummy text
+            <div class="mov-description">
+              <div class="mov-title">
+                The Movie<span class="mov-year">(1998)</span>
+              </div>
+              <div class="mov-info">
+                <div class="mov-lang v-alng">
+                  <span class="material-icons">
+                    language
+                  </span>
+                  <span class="lang-text">EN</span>
+                </div>
+                <div class="mov-vote v-alng">
+                  <span class="material-icons">
+                    star
+                  </span>
+                  <span class="rating-number">8.5</span>
+                </div>
+                <div class="mov-adult v-alng">
+                  <span class="material-icons">
+                    18_up_rating
+                    </span>
+                </div>
+              </div>
+              <button class="slide-btn mov-btn"><span class="know-more">Know More</span></button>
             </div>
           </div>
         </div>
         <div class="mov-grid-box" style="background-color: red;">
-          <div id="mov-1" class="mov">
-            <div id="mov-1-image" class="mov-image">
+          <div  class="mov">
+            <div class="mov-image">
             </div>
-            <div class="mov-text-box">
-              Lorem Ipsum is simply dummy text of the printing am Lorem Ipsum is simply dummy text
+            <div class="mov-description">
+              <div class="mov-title">
+                The Movie
+              </div>
             </div>
           </div>
         </div>
         <div class="mov-grid-box" style="background-color: red;">
-          <div id="mov-1" class="mov">
-            <div id="mov-1-image" class="mov-image">
+          <div  class="mov">
+            <div class="mov-image">
             </div>
-            <div class="mov-text-box">
+            <div class="mov-description">
               Lorem Ipsum is simply dummy text of the printing am Lorem Ipsum is simply dummy text
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
     <footer class="footer">
@@ -118,6 +127,7 @@
         <span class="fas fa-copyright"></span> Copyright @2022 Movie Picker
       </div>
     </footer>
+    <script src="./keys/api_key.js"></script>
 	<script src="./js/index.js"></script>
   </body>
 </html>

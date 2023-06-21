@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movie Picker</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+      <!-- NAVBAR -->
+    <nav>
+        <div id="navbar">
+          <div id="left-navbar">
+            <div id="company-title">
+              Movie Picker
+            </div>
+          </div>
+          <div id="right-navbar">
+            <div class="right-nav-items right-nav-item-selected">
+              Home
+            </div>
+            <div class="right-nav-items">
+              Contact us
+            </div>
+            <div class="right-nav-items">
+              About us
+            </div>
+        </div>
+        </div>
+      </nav>
+      <!-- movie description body -->
+      <div class="movie-content-box">
+        <div class="movie-pic">
+        </div>
+        <div class="movie-description">
+          <div class="movie-name">
+            The Movie
+          </div>
+          <div class="movie-details">
+            <div class="movie-release-date">
+              14/01/2022
+            </div>
+            <div class="mov-lang v-alng">
+              <span class="material-icons">
+                language
+              </span>
+              <span class="lang-text">EN</span>
+            </div>
+            <div class="movie-genre">
+              Action,Thriller
+            </div>
+            <div class="movie-runtime">
+              2h24min
+            </div>
+          </div>
+          <div class="movie-extras">
+            <div class="movie-rating">
+              <!-- <div class="v-alng">
+                <span class="material-icons">
+                  star
+                </span>
+                <span class="rating-number">8.5</span>
+              </div> -->
+              <div class="mov-vote v-alng" style="background-color: rgb(222, 236, 115)">
+                <span class="material-icons">
+                  star
+                </span>
+                <span class="rating-number">8.5</span>
+              </div>
+            </div>
+            <div class="movie-now-playing">
+              <div class="provider-logo">
+                <img class="fit-logo-div" src="https://image.tmdb.org/t/p/original/68MNrwlkpF7WnmNPXLah69CR5cb.jpg" alt="logo">
+              </div>
+              <div class="provider-logo">
+                <img class="fit-logo-div" src="https://image.tmdb.org/t/p/original/68MNrwlkpF7WnmNPXLah69CR5cb.jpg" alt="logo">
+              </div>
+            </div>
+          </div>
+          <div class="movie-overview">
+            <p class="overview-heading">Overview</p>
+            <p class="overview-text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- MOVIE CAST -->
+      <div class="movie-cast">
+        <div class="movie-top-cast">
+          Top Casts
+        </div>
+        <div class="movie-cast-flexbox">
+          <div class="cast-cards">
+            <div class="cast-img">
+              <img class="cast-pic" src="https://image.tmdb.org/t/p/original/cckcYc2v0yh1tc9QjRelptcOBko.jpg">
+            </div>
+            <div class="cast-info">
+              <p class="cast-name">Brad Pitt</p>
+              <p class="cast-char-name">Tyler Durden</p>
+            </div>
+          </div>
+          <div class="cast-cards">
+            
+          </div>
+          <div class="cast-cards">
+            
+          </div>
+          <div class="cast-cards">
+            
+          </div>
+          <div class="cast-cards">
+            
+          </div>
+          <div class="cast-cards">
+            
+          </div>
+          <div class="cast-cards">
+            
+          </div>
+          <div class="cast-cards">
+            
+          </div>
+        </div>
+      </div>
+      
+      <!-- REVIEW -->
+      <div id="reveiw">
+        <div class="reveiw-header">
+          <p class="reveiw-header-text">
+            Reveiws
+          </p>
+        </div>
+        <div id="reveiw-carousel" class="carousel" data-carousel data-review-carousel>
+          <div class="carousel-buttons">
+            <button
+              class="carousel-button carousel-button_previous"
+              data-carousel-button-previous
+            >
+            <span class="material-icons arrow">
+              arrow_left
+              </span>
+            </button>
+            <button
+              class="carousel-button carousel-button_next"
+              data-carousel-button-next
+            >
+            <span class="material-icons arrow">
+              arrow_right
+              </span>
+            </button>
+          </div>
+          <div class="slides reveiw-slides-container" data-carousel-slides-container data-review-carousel-container>
+             <!--reveiw content 
+           slide may require 
+            <div class="reveiw-slide">
+              <div class="reveiw-author">
+                <div class="author-avatar">
+                  <img  class="author-avatar-img" src="https://image.tmdb.org/t/p/original/uCmwgSbJAcHqNwSvQvTv2dB95tx.jpg" alt="author avatar">
+                </div>
+                <div class="author-details">
+                  <div class="author-name">
+                    Jhon Doe
+                  </div>
+                  <div class="reveiw-date">
+                    20 July 2022
+                  </div>
+                </div>
+              </div>
+              <div class="reveiw-content">
+                <p class="reveiw-text">
+                  MORE SPOILER-FREE REVIEWS @ https://www.msbreviews.com/
+
+                  "The Gray Man holds the energetic, over-the-top, explosive action from the Russo Brothers, which should be enough to entertain the vast majority of the audience throughout the admittedly generic, predictable screenplay. Excessive camera movement occasionally sabotages the fantastic fight choreography, but nothing that lasts too long.
+
+                  Regardless of the valuable technical aspects, the success of this movie is inherently connected to the superb performances from a cast packed with chemistry. Ryan Gosling demonstrates that he knows how to play an action protagonist, Chris Evans clearly has tons of fun playing a "bad guy" full of personality, Ana de Armas captivates as the sidekick badass, while Jessica Henwick is underused - the actress has done more than enough in her career to portray bigger roles.
+
+                  See it in the theater, if possible."
+
+                  Rating: B
+                </p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <!-- TRAILER -->
+      <div class="trailer">
+        <p class="trailer-head">Trailer</p>
+        <div class="trailer-video">
+          <iframe  class="trailer-yt"
+          src="https://www.youtube.com/embed/6JnN1DmbqoU?mute=1">
+          </iframe>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="copyright">
+          <span class="fas fa-copyright"></span> Copyright @2022 Movie Picker
+        </div>
+      </footer>
+      <script src="./keys/api_key.js"></script>
+	  <script src="./js/movie.js"></script>
+  </body>
+</html>
